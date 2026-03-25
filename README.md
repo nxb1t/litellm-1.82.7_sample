@@ -1,10 +1,8 @@
 # Overview
 
-This repo contains the payloads recovered from the litellm 1.82.7 compromised package. The malicious code was injected inside `litellm/proxy/proxy_server.py` file starting from line 128 to line 140. During analysis, I found multiple base64 payload variants embedded in the script. However only first one gets executed, which is similar to the payload found in the litellm 1.82.8 compromised package. 
+This repo contains the payloads recovered from the litellm 1.82.7 compromised package. The malicious code was injected inside `litellm/proxy/proxy_server.py` file starting from line 128 to line 140.
 
-Since both 1.82.7 and 1.82.8 versions share same infrastructure, check out [litellm 1.82.8 payload](https://github.com/HackingLZ/litellm_1.82.8_payload) analysis by HackingLZ for a detailed overview.
-
-Here I mainly focused on the different base64 payloads observed in the sample.
+Since both 1.82.7 and 1.82.8 versions share same infrastructure, check out [litellm 1.82.8 payload](https://github.com/HackingLZ/litellm_1.82.8_payload) analysis by HackingLZ for a detailed overview. However here I mainly focused on the different base64 payloads observed during analysis, some payloads were identical to 1.82.8 version sample but others were really interesting.
 
 Original Sample : [litellm-1.82.7.tar.gz - malwarebazaar](https://bazaar.abuse.ch/sample/8a2a05fd8bdc329c8a86d2d08229d167500c01ecad06e40477c49fb0096efdea/)
 
