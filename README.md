@@ -52,7 +52,7 @@ This is the only branch that executes in the sample as written.
 
 - Initial trigger: active `b64_payload` in `proxy_server.py`
 - Stage 1: `exfil_variant1.py`
-- Stage 2: `collector_vatiant1.py`
+- Stage 2: `collector_variant1.py`
 - Stage 3: `persistence_variant1.py`
 
 ### Variant 2
@@ -96,7 +96,7 @@ This branch is the more distinct alternate family. The collector uses RC4-obfusc
   Alternate outer wrapper from the first commented branch.
 - `exfil_variant3.py`
   Alternate outer wrapper from the second commented branch.
-- `collector_vatiant1.py`
+- `collector_variant1.py`
   Collector for the active branch.
 - `collector_variant2.py`
   Collector associated with Variant 2.
